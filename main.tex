@@ -1,0 +1,792 @@
+%% ===========================================================================
+%%  bioRxiv preprint template -- LaTeX / Overleaf version
+%%  Port of the bioRxiv Word template by Christian L. Ebbesen (@chrelli):
+%%  https://github.com/chrelli/bioRxiv-word-template
+%%
+%%  Compiler: pdfLaTeX (Overleaf default) works out of the box.
+%%            XeLaTeX or LuaLaTeX uses the original OpenType STIX Two fonts
+%%            (Menu > Settings > Compiler on Overleaf).
+%%
+%%  Class options:
+%%    numbers  -> bracketed citations [1] instead of superscript citations
+%%    nologo   -> omit the bioRxiv logo
+%% ===========================================================================
+\documentclass{biorxiv}
+
+%% ---- Header / footer ------------------------------------------------------
+\runningtitle{Running title}                       % centred header, pages 2+
+\preprintfooter{Lastname et al. 2019 (preprint)}   % footer, left
+
+%% ---- Title and authors ----------------------------------------------------
+\title{Challenging experiments reveal a very surprising\\
+  and interesting biological discovery}
+
+\author{Firstname A. Lastname,\affil{a,b,c} Name Lastname,\affil{a}
+  and First B. Lastname\affil{a,d,*}}
+
+\address{a}{Institue of Biology, University of Something, 10115 Berlin, Germany}
+\address{b}{Center for Biological Sciences, Another University, 10115 Berlin, Germany}
+\address{c}{Current Address: Department of Animal Biology, University Somewhere Else, NY 10016, USA}
+\address{d}{Biology Cluster of Whatever, Some Research University, 2200 Copenhagen N, Denmark}
+\correspondence{Correspondence should be addressed to F.B.L.
+  (first.b.lastname@some\_university.edu)}
+
+%% ---- Abstract (bold Helvetica, full width) --------------------------------
+\begin{abstract}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec
+laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna.
+Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et
+imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget
+sapien. Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam
+erat volutpat. Sed at lorem in nunc porta tristique. Proin nec augue. Quisque
+aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus
+et malesuada fames ac turpis egestas. Nunc ac magna. Maecenas odio dolor,
+vulputate vel, auctor ac, accumsan id, felis. Pellentesque cursus sagittis
+felis. Pellentesque porttitor, velit lacinia egestas auctor, diam eros tempus
+arcu, nec vulputate augue magna vel risus. Cras non magna vel ante adipiscing
+rhoncus. Vivamus a mi. Morbi neque. Aliquam erat volutpat. Integer ultrices
+lobortis eros. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas. Proin semper, ante vitae sollicitudin
+posuere, metus quam iaculis nibh, vitae scelerisque nunc massa eget pede. Sed
+velit urna, interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+consectetuer eget, consequat quis, tempus quis, wisi. In in nunc. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
+\end{abstract}
+
+\begin{document}
+\maketitle
+
+%% ===========================================================================
+%%  Main text: STIX Two Text 10/12.5 pt. The first paragraph after a heading
+%%  is not indented; the following ones get a 5 mm indent automatically.
+%%    \section     -> Heading 1 (Helvetica bold 11 pt, red)
+%%    \subsection  -> Heading 2 (Helvetica bold 9 pt, red); no space before it
+%%                    when it directly follows a \section, 6 pt otherwise
+%%  Figures: single column  \begin{figure}  + width=\onecolumnwidth    (89 mm)
+%%           1.5 column     \begin{figure*} + width=\onehalfcolumnwidth (133.125 mm)
+%%           full width     \begin{figure*} + width=\twocolumnwidth    (183.9 mm)
+%%  Legends: \caption{\figtitle{Bold red title.} Text with \panel{A} panels.}
+%% ===========================================================================
+
+\section{Introduction}
+Lorem ipsum dolor sit amet, consectetuer adipiscing
+elit\cite{Lastname1971a,Lastname1953a,Lastname2019a}. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem.
+
+In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque
+at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis
+eleifend. Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus lorem
+pellentesque magna. Integer nulla. Donec blandit feugiat ligula. Donec
+hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia
+nulla nisl eget sapien. Donec ut est in lectus consequat consequat. Etiam eget
+dui. Aliquam erat volutpat. Sed at lorem in nunc porta tristique. Proin nec
+augue. Quisque aliquam tempor magna. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Nunc ac magna.
+Maecenas odio dolor, vulputate vel, auctor ac, accumsan id, felis.
+Pellentesque cursus sagittis felis.
+
+Pellentesque porttitor, velit lacinia egestas auctor, diam eros tempus arcu,
+nec vulputate augue magna vel risus. Cras non magna vel ante adipiscing
+rhoncus. Vivamus a mi. Morbi neque. Aliquam erat volutpat. Integer ultrices
+lobortis eros. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas. Proin semper, ante vitae sollicitudin
+posuere, metus quam iaculis nibh, vitae scelerisque nunc massa eget pede. Sed
+velit urna, interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+consectetuer eget, consequat quis, tempus quis, wisi. In in nunc. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
+Donec ullamcorper fringilla eros. Fusce in sapien eu purus dapibus commodo.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+ridiculus mus. Cras faucibus condimentum odio. Sed ac ligula. Aliquam at eros.
+Etiam at ligula et tellus ullamcorper ultrices. In fermentum, lorem non cursus
+porttitor, diam urna accumsan lacus, sed interdum wisi nibh nec nisl.
+
+Ut tincidunt volutpat urna. Mauris eleifend nulla eget mauris. Sed cursus quam
+id felis. Curabitur posuere quam vel nibh. Cras dapibus dapibus nisl.
+Vestibulum quis dolor a felis congue vehicula. Maecenas pede purus, tristique
+ac, tempus eget, egestas quis, mauris. Curabitur non eros. Nullam hendrerit
+bibendum justo. Fusce iaculis, est quis lacinia pretium, pede metus molestie
+lacus, at gravida wisi ante at libero.
+
+Quisque ornare placerat risus. Ut molestie magna at mi. Integer aliquet mauris
+et nibh. Ut mattis ligula posuere velit. Nunc sagittis. Curabitur varius
+fringilla nisl. Duis pretium mi euismod erat. Maecenas id augue. Nam
+vulputate. Duis a quam non neque lobortis malesuada. Praesent euismod. Donec
+nulla augue, venenatis scelerisque, dapibus a, consequat at, leo. Pellentesque
+libero lectus, tristique ac, consectetuer sit amet, imperdiet ut, justo. Sed
+aliquam odio vitae tortor. Proin hendrerit tempus arcu. In hac habitasse
+platea dictumst. Suspendisse potenti. Vivamus vitae massa adipiscing est
+lacinia sodales. Donec metus massa, mollis vel, tempus placerat, vestibulum
+condimentum, ligula. Nunc lacus metus, posuere eget, lacinia eu.
+
+\section{Results}
+\subsection{First subheading has no extra space before it}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem.
+
+In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque
+at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis
+eleifend. Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus lorem
+pellentesque magna. Integer nulla. Donec blandit feugiat ligula. Donec
+hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia
+nulla nisl eget sapien. Donec ut est in lectus consequat consequat. Etiam eget
+dui. Aliquam erat volutpat. Sed at lorem in nunc porta tristique. Proin nec
+augue. Quisque aliquam tempor magna. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Nunc ac magna.
+Maecenas odio dolor, vulputate vel, auctor ac, accumsan id, felis.
+Pellentesque cursus sagittis felis.
+
+\begin{figure}[t]
+  \figureplaceholder{\onecolumnwidth}{69.96mm}% \includegraphics[width=\onecolumnwidth]{fig1}
+  \caption{\figtitle{Example of a single column figure, 89 mm wide.}
+    \panel{A} Pellentesque porttitor, velit lacinia egestas auctor, diam
+    eros tempus arcu, nec vulputate augue magna vel risus. Cras non magna
+    vel ante adipiscing rhoncus. Vivamus a mi. Morbi neque. Aliquam erat
+    volutpat. Integer ultrices lobortis eros. Pellentesque habitant morbi
+    tristique senectus et netus et malesuada fames ac turpis egestas.
+    \panel{B} Proin semper, ante vitae sollicitudin posuere, metus quam
+    iaculis nibh, vitae scelerisque nunc massa eget pede. Sed velit urna,
+    interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+    consectetuer eget, consequat quis, tempus quis, wisi. In in nunc. Per
+    inceptos hymenaeos. Donec ullamcorper fringilla eros. Fusce in sapien eu
+    purus dapibus commodo. Cum sociis natoque penatibus et magnis dis
+    parturient montes, nascetur ridiculus mus. Cras faucibus condimentum
+    odio. \panel{C} Sed ac ligula. Aliquam at eros. Etiam at ligula et
+    tellus ullamcorper ultrices. In fermentum, lorem non cursus porttitor,
+    diam urna accumsan lacus, sed interdum wisi nibh nec nisl. *~p
+    $<$ 0.05, **~p $<$ 0.01, ***~p $<$ 0.001}
+  \label{fig:single}
+\end{figure}
+
+Pellentesque porttitor, velit lacinia egestas auctor, diam eros tempus arcu,
+nec vulputate augue magna vel risus. Cras non magna vel ante adipiscing
+rhoncus. Vivamus a mi. Morbi neque. Aliquam erat volutpat. Integer ultrices
+lobortis eros. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas. Proin semper, ante vitae sollicitudin
+posuere, metus quam iaculis nibh, vitae scelerisque nunc massa eget pede. Sed
+velit urna, interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+consectetuer eget, consequat quis, tempus quis, wisi. In in nunc. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
+Donec ullamcorper fringilla eros. Fusce in sapien eu purus dapibus commodo.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+ridiculus mus. Cras faucibus condimentum odio. Sed ac ligula.
+
+\subsection{Subsequent subheadings have 6 pt space before them}
+Aliquam nonummy adipiscing augue. Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed
+pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros
+quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem.
+In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque
+at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis
+eleifend. Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus lorem
+pellentesque magna. Integer nulla. Donec blandit feugiat ligula.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec
+laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+Fusce aliquet pede non pede.
+
+% One-and-one-half column figure (133.125 mm wide). LaTeX cannot flow text
+% beside a float, so the remaining 50.8 mm of the page width stays empty.
+\begin{figure*}[t]
+  \begin{minipage}{\onehalfcolumnwidth}
+  \figureplaceholder{\onehalfcolumnwidth}{71.05mm}% \includegraphics[width=\onehalfcolumnwidth]{fig2}
+  \caption{\figtitle{Example of a one-and-one-half column figure, 133.125 mm wide.}
+    \panel{A} Pellentesque porttitor, velit lacinia egestas auctor, diam
+    eros tempus arcu, nec vulputate augue magna vel risus. Cras non magna
+    vel ante adipiscing rhoncus. Vivamus a mi. Morbi neque. Aliquam erat
+    volutpat. Integer ultrices lobortis eros. Pellentesque habitant morbi
+    tristique senectus et netus et malesuada fames ac turpis egestas.
+    \panel{B} Proin semper, ante vitae sollicitudin posuere, metus quam
+    iaculis nibh, vitae scelerisque nunc massa eget pede. Sed velit urna,
+    interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+    consectetuer eget, consequat quis, tempus quis, wisi. In in nunc. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos hymenaeos. Donec ullamcorper fringilla eros. Fusce in sapien eu
+    purus dapibus commodo. Cum sociis natoque penatibus et magnis dis
+    parturient montes, nascetur ridiculus mus. Cras faucibus condimentum
+    odio. \panel{C} Sed ac ligula. Aliquam at eros. Etiam at ligula et
+    tellus ullamcorper ultrices. In fermentum, lorem non cursus porttitor,
+    diam urna accumsan lacus, sed interdum wisi nibh nec nisl. \panel{D}
+    Aliquam erat volutpat. Integer ultrices lobortis eros. Pellentesque
+    habitant morbi tristique senectus et netus et malesuada fames ac turpis
+    egestas. Proin semper, ante vitae sollicitudin posuere, metus quam
+    iaculis nibh, vitae scelerisque nunc massa eget pede. Sed velit urna,
+    interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+    consectetuer eget, consequat quis, tempus quis, wisi. In in nunc. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos hymenaeos. *~p $<$ 0.05, **~p $<$ 0.01, ***~p
+    $<$ 0.001}
+  \label{fig:onehalf}
+  \end{minipage}
+\end{figure*}
+
+Suspendisse dapibus lorem pellentesque magna. Integer nulla. Donec blandit
+feugiat ligula. Donec hendrerit, felis et imperdiet euismod, purus ipsum
+pretium metus, in lacinia nulla nisl eget sapien. Donec ut est in lectus
+consequat consequat. Etiam eget dui. Aliquam erat volutpat. Sed at lorem in
+nunc porta tristique. Proin nec augue. Quisque aliquam tempor magna.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+turpis egestas. Nunc ac magna. Maecenas odio dolor, vulputate vel, auctor ac,
+accumsan id, felis. Pellentesque cursus sagittis felis. Pellentesque
+porttitor, velit lacinia egestas auctor, diam eros tempus arcu, nec vulputate
+augue magna vel risus. Cras non magna vel ante adipiscing rhoncus.
+
+\subsection{Another example of a subheading}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem.
+
+Proin nec augue. Quisque aliquam tempor magna. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ac
+magna. Maecenas odio dolor, vulputate vel, auctor ac, accumsan id, felis.
+Pellentesque cursus sagittis felis. Pellentesque porttitor, velit lacinia
+egestas auctor, diam eros tempus arcu, nec vulputate augue magna vel risus.
+Cras non magna vel ante adipiscing rhoncus. Vivamus a mi. Morbi neque. Aliquam
+erat volutpat. Integer ultrices lobortis eros. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+semper, ante vitae sollicitudin posuere, metus quam iaculis nibh, vitae
+scelerisque nunc massa eget pede. Sed velit urna, interdum vel, ultricies
+vel, faucibus at, quam. Donec elit est, consectetuer eget, consequat quis,
+tempus quis, wisi. In in nunc. Class aptent taciti sociosqu ad litora
+torquent per conubia nostra, per inceptos hymenaeos. Donec ullamcorper
+fringilla eros. Fusce in sapien eu purus dapibus commodo. Cum sociis natoque
+penatibus et magnis dis parturient montes, arcu. In hac habitasse platea
+dictumst. Suspendisse potenti. Vivamus vitae massa adipiscing est lacinia
+sodales. Donec metus massa, mollis vel, tempus placerat, vestibulum
+condimentum, ligula. Nunc lacus metus, posuere eget, lacinia eu, varius quis,
+libero. Aliquam nonummy adipiscing augue. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere,
+magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo
+magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a
+tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean
+nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus,
+scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at
+sem venenatis eleifend. Ut nonummy.
+
+\subsection{Final subheadning with killer results}
+\begin{figure*}[t]
+  \figureplaceholder{\twocolumnwidth}{71.05mm}% \includegraphics[width=\twocolumnwidth]{fig3}
+  \caption{\figtitle{Example of a full width figure, 183.9 mm wide.}
+    \panel{A} Pellentesque porttitor, velit lacinia egestas auctor, diam
+    eros tempus arcu, nec vulputate augue magna vel risus. Cras non magna
+    vel ante adipiscing rhoncus. Vivamus a mi. Morbi neque. Aliquam erat
+    volutpat. Integer ultrices lobortis eros. Pellentesque habitant morbi
+    tristique senectus et netus et malesuada fames ac turpis egestas.
+    \panel{B} Proin semper, ante vitae sollicitudin posuere, metus quam
+    iaculis nibh, vitae scelerisque nunc massa eget pede. Sed velit urna,
+    interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+    consectetuer eget, consequat quis, tempus quis, wisi. In in nunc. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos hymenaeos. Donec ullamcorper fringilla eros. Fusce in sapien eu
+    purus dapibus commodo. Cum sociis natoque penatibus et magnis dis
+    parturient montes, nascetur ridiculus mus. Cras faucibus condimentum
+    odio. \panel{C} Sed ac ligula. Aliquam at eros. Etiam at ligula et
+    tellus ullamcorper ultrices. In fermentum, lorem non cursus porttitor,
+    diam urna accumsan lacus, sed interdum wisi nibh nec nisl. \panel{D}
+    Aliquam erat volutpat. Integer ultrices lobortis eros. Pellentesque
+    habitant morbi tristique senectus et netus et malesuada fames ac turpis
+    egestas. Proin semper, ante vitae sollicitudin posuere, metus quam
+    iaculis nibh, vitae scelerisque nunc massa eget pede. Sed velit urna,
+    interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+    consectetuer eget, consequat quis, tempus quis, wisi. In in nunc. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos hymenaeos. *~p $<$ 0.05, **~p $<$ 0.01, ***~p
+    $<$ 0.001}
+  \label{fig:double}
+\end{figure*}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec
+laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna.
+
+Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et
+imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget
+sapien. Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam
+erat volutpat. Sed at lorem in nunc porta tristique. Proin nec augue. Quisque
+aliquam tempor magna.
+
+Aliquam erat volutpat. Integer ultrices lobortis eros. Pellentesque habitant
+morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+semper, ante vitae sollicitudin posuere, metus quam iaculis nibh, vitae
+scelerisque nunc massa eget pede. Sed velit urna, interdum vel, ultricies vel,
+faucibus at, quam. Donec elit est, consectetuer eget, consequat quis, tempus
+quis, wisi. In in nunc. Class aptent taciti sociosqu ad litora torquent per
+conubia nostra, per inceptos hymenaeos. Donec ullamcorper fringilla eros.
+Fusce in sapien eu purus dapibus commodo. Cum sociis natoque penatibus et
+magnis dis parturient montes, nascetur ridiculus mus. Cras faucibus
+condimentum odio. Sed ac ligula. Aliquam at eros. Etiam at ligula et tellus
+ullamcorper ultrices. In fermentum, lorem non cursus porttitor, diam urna
+accumsan lacus, sed interdum wisi nibh nec nisl. Ut tincidunt volutpat urna.
+
+\section{Discussion}
+\subsection{Summary, again this line has no space before}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec
+laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+
+\subsection{How about this discovery, huh? (6 pt space before)}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec
+laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna.
+Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et
+imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget
+sapien.
+
+Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam erat
+volutpat. Sed at lorem in nunc porta tristique. Proin nec augue. Quisque
+aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus
+et malesuada fames ac turpis egestas. Nunc ac magna. Maecenas odio dolor,
+vulputate vel, auctor ac, accumsan id, felis. Pellentesque cursus sagittis
+felis. Pellentesque porttitor, velit lacinia egestas auctor, diam eros tempus
+arcu, nec vulputate augue magna vel risus. Cras non magna vel ante adipiscing
+rhoncus. Vivamus a mi. Morbi neque. Aliquam erat volutpat. Integer ultrices
+lobortis eros. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas. Proin semper, ante vitae sollicitudin
+posuere, metus quam iaculis nibh, vitae scelerisque nunc massa eget pede. Sed
+velit urna, interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+consectetuer eget, consequat quis, tempus quis, wisi.
+
+In in nunc. Class aptent taciti sociosqu ad litora torquent per conubia
+nostra, per inceptos hymenaeos. Donec ullamcorper fringilla eros. Fusce in
+sapien eu purus dapibus commodo. Cum sociis natoque penatibus et magnis dis
+parturient montes, nascetur ridiculus mus. Cras faucibus condimentum odio. Sed
+ac ligula. Aliquam at eros. Etiam at ligula et tellus ullamcorper ultrices.
+
+\subsection{You all said it wouldn't work, and you were all wrong}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Ut nonummy. Fusce aliquet pede non pede. Suspendisse
+dapibus lorem pellentesque magna. Integer nulla. Donec blandit feugiat ligula.
+Donec hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in
+lacinia nulla nisl eget sapien.
+
+Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam erat
+volutpat. Sed at lorem in nunc porta tristique. Proin nec augue. Quisque
+aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus
+et malesuada fames ac turpis egestas. Nunc ac magna. Maecenas odio dolor,
+vulputate vel, auctor ac, accumsan id, felis. Pellentesque cursus sagittis
+felis. Pellentesque porttitor, velit lacinia egestas auctor, diam eros tempus
+arcu, nec vulputate augue magna vel risus. Cras non magna vel ante adipiscing
+rhoncus. Vitae scelerisque nunc massa eget pede. Sed velit urna, interdum vel,
+ultricies vel, faucibus at, quam. Donec elit est, consectetuer eget, consequat
+quis, tempus quis, wisi.
+
+In in nunc. Class aptent taciti sociosqu ad litora torquent per conubia
+nostra, per inceptos hymenaeos. Donec ullamcorper fringilla eros. Fusce in
+sapien eu purus dapibus commodo. Cum sociis natoque penatibus et magnis dis
+parturient montes, nascetur ridiculus mus. Cras faucibus condimentum odio. Sed
+ac ligula. Aliquam at eros. Etiam at ligula et tellus ullamcorper ultrices. In
+fermentum, lorem non cursus porttitor, diam urna accumsan lacus, sed interdum
+wisi nibh nec nisl.
+
+\subsection{What a massive breakthrough for the field}
+Pellentesque porttitor, velit lacinia egestas auctor, diam eros tempus arcu,
+nec vulputate augue magna vel risus. Cras non magna vel ante adipiscing
+rhoncus. Vivamus a mi. Morbi neque. Aliquam erat volutpat. Integer ultrices
+lobortis eros. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas. Proin semper, ante vitae sollicitudin
+posuere, metus quam iaculis nibh, vitae scelerisque nunc massa eget pede. Sed
+velit urna, interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+consectetuer eget, consequat quis, tempus quis, wisi.
+
+In in nunc. Class aptent taciti sociosqu ad litora torquent per conubia
+nostra, per inceptos hymenaeos. Donec ullamcorper fringilla eros. Fusce in
+sapien eu purus dapibus commodo. Cum sociis natoque penatibus et magnis dis
+parturient montes, nascetur ridiculus mus. Cras faucibus condimentum odio. Sed
+ac ligula. Cras dapibus dapibus nisl. Vestibulum quis dolor a felis congue
+vehicula. Maecenas pede purus, tristique ac, tempus eget, egestas quis,
+mauris. Curabitur non eros. Nullam hendrerit bibendum justo. Fusce iaculis,
+est quis lacinia pretium, pede metus molestie lacus, at gravida wisi ante at
+libero.
+
+Quisque ornare placerat risus. Ut molestie magna at mi. Integer aliquet mauris
+et nibh. Ut mattis ligula posuere velit. Nunc sagittis. Curabitur varius
+fringilla nisl. Duis pretium mi euismod erat. Maecenas id augue. Nam
+vulputate. Duis a quam non neque lobortis malesuada. Praesent euismod. Donec
+nulla augue, venenatis scelerisque, dapibus a, consequat at, leo. Pellentesque
+libero lectus, tristique ac, consectetuer sit amet, imperdiet ut, justo.
+
+\subsection{Conclusion}
+Aliquam nonummy adipiscing augue. Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed
+pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros
+quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+turpis egestas. Proin pharetra nonummy pede.
+
+
+%% ---- References (Nature style, 8 pt) --------------------------------------
+\nocite{*}  % lists every entry of references.bib; remove for your own paper
+\bibliographystyle{biorxiv}
+\bibliography{references}
+
+%% ===========================================================================
+%%  Back matter and Materials & Methods: 8/10 pt "Methods Text".
+%%  Inside the methods environment \subsection gives the 7.5 pt methods
+%%  subheading (no space directly after a \section, 4 pt otherwise).
+%% ===========================================================================
+
+\begin{methods}
+\section*{Acknowledgements}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. This paper was typeset with the bioRxiv word template
+by @Chrelli: \url{www.github.com/chrelli/bioRxiv-word-template}
+
+\section*{Author contributions}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est.
+
+\section*{Competing interest statement}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+\section{Materials and Methods}
+\subsection{First methods subheading (no space before)}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede.
+
+\subsection{Very tricky method (4 pt space before)}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec
+laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend.
+
+Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus lorem
+pellentesque magna. Integer nulla. Donec blandit feugiat ligula. Donec
+hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia
+nulla nisl eget sapien. Donec ut est in lectus consequat consequat. Etiam eget
+dui. Aliquam erat volutpat. Sed at lorem in nunc porta tristique. Proin nec
+augue. Quisque aliquam tempor magna. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Nunc ac magna.
+
+Maecenas odio dolor, vulputate vel, auctor ac, accumsan id, felis.
+Pellentesque cursus sagittis felis. Pellentesque porttitor, velit lacinia
+egestas auctor, diam eros tempus arcu, nec vulputate augue magna vel risus.
+Cras non magna vel ante adipiscing rhoncus. Vivamus a mi. Morbi neque. Aliquam
+erat volutpat. Integer ultrices lobortis eros. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+semper, ante vitae sollicitudin posuere, metus quam iaculis nibh, vitae
+scelerisque nunc massa eget pede. Sed velit urna, interdum vel, ultricies vel,
+faucibus at, quam. Donec elit est, consectetuer eget, consequat quis, tempus
+quis, wisi. In in nunc. Class aptent taciti sociosqu ad litora torquent per
+conubia nostra, per inceptos hymenaeos.
+
+\subsection{Difficult experiments}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec
+laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna.
+Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et
+imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget
+sapien. Donec ut est in lectus consequat consequat. Etiam eget dui Nunc ac
+magna. Maecenas odio dolor, vulputate vel, auctor ac, accumsan id, felis.
+Pellentesque cursus sagittis felis. Pellentesque porttitor, velit lacinia
+egestas auctor, diam eros tempus arcu, nec vulputate augue magna vel risus.
+Cras non magna vel ante adipiscing rhoncus. Vivamus a mi. Morbi neque. Aliquam
+erat volutpat.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec
+laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna.
+Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et
+imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget
+sapien. Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam
+erat volutpat. Sed at lorem in nunc porta tristique. Proin nec augue. Quisque
+aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus
+et malesuada fames ac turpis egestas. Nunc ac magna. Maecenas odio dolor,
+vulputate vel, auctor ac, accumsan id, felis. Pellentesque cursus sagittis
+felis.
+
+\subsection{Some mathematics}
+You can even add math and it will look fine. \textbf{Use STIX TWO MATH as the
+font}, please don't use Cambria, and center the equations like this
+\[
+  p(y\,|\,\lambda) = \frac{(\lambda\Delta)^{y}}{y!}\exp(-\lambda\Delta),
+\]
+where $\Delta = 1$~ms is the width of the time bin and $\lambda > 0$~s$^{-1}$
+is the expected discharge rate of the cell. If we assume that each time bin is
+independent, the probability of the entire spike train, $\bar{y}$ is
+\[
+  p(\bar{y}\,|\,\bar{\lambda}) = \prod_i \frac{(\lambda_i\Delta)^{y_i}}{y_i!}
+  \exp(-\lambda_i\Delta),
+\]
+where $y_i, \lambda_i$ is the observed number of spikes and the expected
+discharge rate in the i'th time bin, respectively. If we model the expected
+discharge rate, $\bar{\lambda}$, so that it depends on the parameters,
+$\bar{\beta}$, we have the log-likelihood function
+\[
+  \mathcal{L}(\bar{\beta}) = \log p\bigl(\bar{y}\,|\,\bar{\lambda}(\bar{\beta})\bigr)
+  = \textstyle\sum_i y_i\log\lambda_i + \sum_i y_i\log\Delta
+  - \sum_i\log y_i! - \Delta\sum_i\lambda_i .
+\]
+We model $\bar{\lambda}$ so that it depends linearly on spike history,
+experimental recording, touch and partner sex and -- since the expected firing
+rate cannot be negative -- we model
+\[
+  \bar{\lambda} = \exp(\mathbf{P}\cdot\bar{\beta}),
+\]
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec
+laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna.
+Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et
+imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget
+sapien. Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam
+erat volutpat. Sed at lorem in nunc porta tristique. Proin nec augue. Quisque
+aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus
+et malesuada fames ac turpis egestas. Nunc ac magna. Maecenas odio dolor,
+vulputate vel, auctor ac, accumsan id, felis. Pellentesque cursus sagittis
+felis. Pellentesque porttitor, velit lacinia egestas auctor, diam eros tempus
+arcu, nec vulputate augue magna vel risus. Cras non magna vel ante adipiscing
+rhoncus. Vivamus a mi. Morbi neque. Aliquam erat volutpat. Integer ultrices
+lobortis eros. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas. Proin semper, ante vitae sollicitudin
+posuere, metus quam iaculis nibh, vitae scelerisque nunc massa eget pede. Sed
+velit urna, interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+consectetuer eget, consequat quis, tempus quis, wisi.
+
+\subsection{Getting this method to work in your own lab will take years}
+In in nunc. Class aptent taciti sociosqu ad litora torquent per conubia
+nostra, per inceptos hymenaeos. Donec ullamcorper fringilla eros. Fusce in
+sapien eu purus dapibus commodo. Cum sociis natoque penatibus et magnis dis
+parturient montes, nascetur ridiculus mus. Cras faucibus condimentum odio. Sed
+ac ligula. Aliquam at eros. Etiam at ligula et tellus ullamcorper ultrices. In
+fermentum, lorem non cursus porttitor, diam urna accumsan lacus, sed interdum
+wisi nibh nec nisl. Ut tincidunt volutpat urna. Mauris eleifend nulla eget
+mauris. Sed cursus quam id felis. Curabitur posuere quam vel nibh. Cras
+dapibus dapibus nisl. Vestibulum quis dolor a felis congue vehicula. Maecenas
+pede purus, tristique ac, tempus eget, egestas quis, mauris. Curabitur non
+eros. Nullam hendrerit bibendum justo. Fusce iaculis, est quis lacinia
+pretium, pede metus molestie lacus, at gravida wisi ante at libero. Quisque
+ornare placerat risus. Ut molestie magna at mi. Integer aliquet mauris et
+nibh. Ut mattis ligula posuere velit. Nunc sagittis. Curabitur varius
+fringilla nisl. Duis pretium mi euismod erat. Maecenas id augue. Nam
+vulputate. Duis a quam non neque lobortis malesuada. Praesent euismod. Donec
+nulla augue, venenatis scelerisque, dapibus a, consequat at, leo. Pellentesque
+libero lectus, tristique ac, consectetuer sit amet, imperdiet ut, justo. Sed
+aliquam odio vitae tortor. Proin hendrerit tempus arcu. In hac habitasse
+platea dictumst. Suspendisse potenti. Vivamus vitae massa adipiscing est
+lacinia sodales. Donec metus massa, mollis vel, tempus placerat, vestibulum
+condimentum, ligula. Nunc lacus metus, posuere eget, lacinia eu, varius quis,
+libero.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
+congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
+malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra
+imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Proin
+pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec
+laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae,
+pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna.
+Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et
+imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget
+sapien. Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam
+erat volutpat. Sed at lorem in nunc porta tristique. Proin nec augue. Quisque
+aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus
+et malesuada fames ac turpis egestas. Nunc ac magna. Maecenas odio dolor,
+vulputate vel, auctor ac, accumsan id, felis. Pellentesque cursus sagittis
+felis. Pellentesque porttitor, velit lacinia egestas auctor, diam eros tempus
+arcu, nec vulputate augue magna vel risus. Cras non magna vel ante adipiscing
+rhoncus. Vivamus a mi. Morbi neque. Aliquam erat volutpat. Integer ultrices
+lobortis eros. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas. Proin semper, ante vitae sollicitudin
+posuere, metus quam iaculis nibh, vitae scelerisque nunc massa eget pede. Sed
+velit urna, interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+consectetuer eget, consequat quis, tempus quis, wisi.
+
+\end{methods}
+
+%% ===========================================================================
+%%  Supplementary material: single column, figures numbered S1, S2, ...
+%% ===========================================================================
+\supplementary
+
+\begin{figure}[t]
+  \centering
+  \figureplaceholder{147.3mm}{85.6mm}% \includegraphics[width=147.3mm]{figS1}
+  \caption{\figtitle{The title of a supplementary figure.}
+    \panel{A} Pellentesque porttitor, velit lacinia egestas auctor, diam
+    eros tempus arcu, nec vulputate augue magna vel risus. Cras non magna
+    vel ante adipiscing rhoncus. Vivamus a mi. Morbi neque. Aliquam erat
+    volutpat. Integer ultrices lobortis eros. Pellentesque habitant morbi
+    tristique senectus et netus et malesuada fames ac turpis egestas.
+    \panel{B} Proin semper, ante vitae sollicitudin posuere, metus quam
+    iaculis nibh, vitae scelerisque nunc massa eget pede. Sed velit urna,
+    interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+    consectetuer eget, consequat quis, tempus quis, wisi. In in nunc. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos hymenaeos. Donec ullamcorper fringilla eros. Fusce in sapien eu
+    purus dapibus commodo. Cum sociis natoque penatibus et magnis dis
+    parturient montes, nascetur ridiculus mus. Cras faucibus condimentum
+    odio. \panel{C} Sed ac ligula. Aliquam at eros. Etiam at ligula et
+    tellus ullamcorper ultrices. In fermentum, lorem non cursus porttitor,
+    diam urna accumsan lacus, sed interdum wisi nibh nec nisl. \panel{D}
+    Aliquam erat volutpat. Integer ultrices lobortis eros. Pellentesque
+    habitant morbi tristique senectus et netus et malesuada fames ac turpis
+    egestas. Proin semper, ante vitae sollicitudin posuere, metus quam
+    iaculis nibh, vitae scelerisque nunc massa eget pede. Sed velit urna,
+    interdum vel, ultricies vel, faucibus at, quam. Donec elit est,
+    consectetuer eget, consequat quis, tempus quis, wisi. In in nunc. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos hymenaeos. *~p $<$ 0.05, **~p $<$ 0.01, ***~p
+    $<$ 0.001}
+  \label{fig:S1}
+\end{figure}
+
+\clearpage
+\section{Supplementary Note 1: Some supplementary code or whatever}
+
+\begin{code}
+<h1>Lorem ipsum dolor sit amet consectetuer adipiscing
+elit</h1>
+<h2>Aenean commodo ligula eget dolor aenean massa</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+elit. Aenean commodo ligula eget dolor. Aenean massa.
+Cum sociis natoque penatibus et magnis dis parturient
+montes, nascetur ridiculus mus. Donec quam felis,
+ultricies nec, pellentesque eu, pretium quis, sem.</p>
+<h2>Aenean commodo ligula eget dolor aenean massa</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+elit. Aenean commodo ligula eget dolor. Aenean massa.
+Cum sociis natoque penatibus et magnis dis parturient
+montes, nascetur ridiculus mus. Donec quam felis,
+ultricies nec, pellentesque eu, pretium quis, sem.</p>
+<ul>
+  <li>Lorem ipsum dolor sit amet consectetuer.</li>
+  <li>Aenean commodo ligula eget dolor.</li>
+  <li>Aenean massa cum sociis natoque penatibus.</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+elit. Aenean commodo ligula eget dolor. Aenean massa.
+Cum sociis natoque penatibus et magnis dis parturient
+montes, nascetur ridiculus mus. Donec quam felis,
+ultricies nec, pellentesque eu, pretium quis, sem.</p>
+<form action="#" method="post">
+  <fieldset>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your
+full name" />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter
+your email address" />
+
+    <label for="message">Message:</label>
+    <textarea id="message" placeholder="What's on your
+mind?"></textarea>
+
+    <input type="submit" value="Send message" />
+
+  </fieldset>
+</form>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+elit. Aenean commodo ligula eget dolor. Aenean massa.
+Cum sociis natoque penatibus et magnis dis parturient
+montes, nascetur ridiculus mus. Donec quam felis,
+ultricies nec, pellentesque eu, pretium quis, sem.</p>
+<table class="data">
+  <tr>
+    <th>Entry Header 1</th>
+    <th>Entry Header 2</th>
+    <th>Entry Header 3</th>
+    <th>Entry Header 4</th>
+  </tr>
+  <tr>
+    <td>Entry First Line 1</td>
+    <td>Entry First Line 2</td>
+    <td>Entry First Line 3</td>
+    <td>Entry First Line 4</td>
+  </tr>
+  <tr>
+    <td>Entry Line 1</td>
+    <td>Entry Line 2</td>
+    <td>Entry Line 3</td>
+    <td>Entry Line 4</td>
+  </tr>
+</table>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+elit. Aenean commodo ligula eget dolor. Aenean massa.
+Cum sociis natoque penatibus et magnis dis parturient
+montes, nascetur ridiculus mus. Donec quam felis,
+ultricies nec, pellentesque eu, pretium quis, sem.</p>
+\end{code}
+
+\end{document}
